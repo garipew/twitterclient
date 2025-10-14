@@ -44,7 +44,7 @@ BEARER_TOKEN={my_token}
 Por fim, execute o script com
 ```
 # Windows
-python .\scraper.py
+python .\scraper.py <query>
 
 # Linux/Mac
 python3 ./scraper.py <query>
