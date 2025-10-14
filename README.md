@@ -50,4 +50,4 @@ python .\scraper.py
 python3 ./scraper.py <query>
 ```
 
-O coletado será armazenado na tabela ***tweets-YY-MM-DD.csv***.
+O coletado será armazenado na tabela ***tweets.csv***.

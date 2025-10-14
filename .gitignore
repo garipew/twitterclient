@@ -4,6 +4,9 @@ env
 # Envs
 .env
 
+# Tables
+*.csv
+
 # IDEs 
 .idea
 .vscode
