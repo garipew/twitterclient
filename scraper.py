@@ -18,7 +18,7 @@ def load():
 
     bearer_token = os.getenv("BEARER_TOKEN")
     if not bearer_token:
-        panic("scrape: Missing TWEEPY_BEARER in .env")
+        panic("scrape: Missing BEARER_TOKEN in .env")
     return query, bearer_token
 
 

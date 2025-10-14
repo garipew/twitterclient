@@ -44,10 +44,10 @@ BEARER_TOKEN={my_token}
 Por fim, execute o script com
 ```
 # Windows
-python .\scrape.py
+python .\scraper.py
 
 # Linux/Mac
-python3 ./scrape.py <query>
+python3 ./scraper.py <query>
 ```
 
 O coletado será armazenado na tabela ***tweets-YY-MM-DD.csv***.
