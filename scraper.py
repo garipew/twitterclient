@@ -62,11 +62,20 @@ def collect_tweets(query, client, since_id=None, pages=5):
                 })
     return tweets
 
+def get_last_saved_id(filename="tweets.csv"):
+    if not os.path.exists(filename):
+        return None
+    try:
+        df = pd.read_csv(filename)
+        return df["id"].max()
+    except Exception:
+        return None
 query, bearer_token = load()
 client: tweepy.Client = tweepy.Client(bearer_token=bearer_token)
 while True:
     print("Collecting tweets...")
-    tweets = collect_tweets(query, client)
+    last_id = get_last_saved_id()
+    tweets = collect_tweets(query, client, since_id=last_id)
     if(tweets):
         save_to_csv(tweets, query)
         print(f'Saved {len(tweets)} tweets.')
