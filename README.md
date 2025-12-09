@@ -1,5 +1,5 @@
-# Web Scraping
-Esse repositório contém um script básico de web scraping em python.
+# API
+Esse repositório contém um script básico que consome a API do twitter.
 
 O objetivo do script é coletar tweets com as hashtags #carroeletrico, #mobilidade, #Tesla, #BYD...
 
