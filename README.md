@@ -6,7 +6,7 @@ O objetivo do script é coletar tweets com as hashtags #carroeletrico, #mobilida
 ## Como usar
 Para usar, primeiro clone este repositório
 ```
-git clone https://github.com/garipew/webscraping.git
+git clone https://github.com/garipew/twitterclient.git
 ```
 
 Crie um ambiente virtual e ative-o, com
@@ -44,10 +44,10 @@ BEARER_TOKEN={my_token}
 Por fim, execute o script com
 ```
 # Windows
-python .\scraper.py <query>
+python .\client.py <query>
 
 # Linux/Mac
-python3 ./scraper.py <query>
+python3 ./client.py <query>
 ```
 
 O coletado será armazenado na tabela ***tweets.csv***.
